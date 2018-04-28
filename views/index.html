@@ -1,0 +1,75 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to Glitch!</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <h1>
+      API Project: URL Shortener Microservice
+    </h1>
+    
+    <main>
+      <h3>
+        User Stories:
+      </h3>
+      <ol>
+        <li>I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.</li>
+        <li>If I pass an invalid URL that doesn't follow the valid <span>http://www.example.com</span> format,
+          the JSON response will contain an error instead.</li>
+        <li> When I visit that shortened URL, it will redirect me to my original link.</li>
+      </ol>
+      
+      <h3>
+        Example Input:
+      </h3>
+      <span><a target="_blank" href="https://fasturl.glitch.me/api/urlshortener/www.example.com">https://fasturl.glitch.me/api/urlshortener/www.example.com</a></span>
+      
+      <h3>
+        Example Output:
+      </h3>
+      <span>
+        {
+          "Original Url": "www.example.com",
+          "Shortened Version": 9531
+        }
+      </span>
+      
+      <h3>
+        Usage:
+      </h3>
+      <span><a target="_blank" href="https://fasturl.glitch.me/9531">https://fasturl.glitch.me/9531</a></span>
+      
+      <h3>
+        Will Redirect To:
+      </h3>
+      <span><a target="_blank" href="https://www.example.com">https://www.example.com</a></span>
+    </main>
+    
+    <footer>
+      Made by <a href="https://www.freecodecamp.org/mukeshangrish" target="_blank">Mukesh K. Angrish</a>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+
+  </body>
+</html>
